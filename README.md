@@ -1,7 +1,5 @@
-# rdkit_tutorials
 
-**Installation:**
-Please download the rdkit tutorials from my github (https://github.com/suneelbvs/rdkit_tu...) including data, and yml files as well.
+**Installation and configuration:
 
 Step 1: download and Install anaconda from anaconda.org
 Step 2: Install conda environment from rdkit.yml by using this command in anaconda terminal : "conda env create -f environment.yml"
