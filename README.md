@@ -1,5 +1,5 @@
 
-**Installation and configuration:
+**Installation and configuration:**
 
 Step 1: download and Install anaconda from anaconda.org
 Step 2: Install conda environment from rdkit.yml by using this command in anaconda terminal : "conda env create -f environment.yml"
