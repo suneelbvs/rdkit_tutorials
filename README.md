@@ -11,7 +11,7 @@ This repository contains a collection of Jupyter notebooks that demonstrate comm
 
 1. **Clone or download the repository.**
    ```bash
-   git clone https://github.com/<your-username>/rdkit_tutorials.git
+   git clone https://github.com/rdkit/rdkit_tutorials.git
    cd rdkit_tutorials
    ```
 
