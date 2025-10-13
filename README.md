@@ -15,9 +15,9 @@ This repository contains a collection of Jupyter notebooks that demonstrate comm
    cd rdkit_tutorials
    ```
 
-2. **Create the Conda environment.** The repository includes an environment specification at `rdkit.yml`. Create the environment with:
+2. **Create the Conda environment.** The repository includes an environment specification at `environment.yml`. Create the environment with:
    ```bash
-   conda env create -f rdkit.yml
+   conda env create -f environment.yml
    ```
 
 3. **Verify the installation (optional).**
