@@ -1,6 +1,14 @@
 # RDKit Tutorials
 
-This repository contains a collection of Jupyter notebooks that demonstrate common cheminformatics workflows using [RDKit](https://www.rdkit.org/). The notebooks walk through reading and writing SMILES, calculating molecular properties, generating fingerprints, and performing substructure or similarity searches.
+A curated collection of Jupyter notebooks showcasing practical cheminformatics workflows with [RDKit](https://www.rdkit.org/). The tutorials start with the fundamentals of reading and writing molecules and progress to advanced topics such as reaction enumeration, conformer analysis, and building QSAR models.
+
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Environment Setup](#environment-setup)
+- [Running the Notebooks](#running-the-notebooks)
+- [Tutorial Catalog](#tutorial-catalog)
+- [Data](#data)
+- [Additional Resources](#additional-resources)
 
 ## Prerequisites
 
@@ -15,9 +23,9 @@ This repository contains a collection of Jupyter notebooks that demonstrate comm
    cd rdkit_tutorials
    ```
 
-2. **Create the Conda environment.** The repository includes an environment specification at `environment.yml`. Create the environment with:
+2. **Create the Conda environment.** The repository includes an environment specification at `rdkit.yml`.
    ```bash
-   conda env create -f environment.yml
+   conda env create -f rdkit.yml
    ```
 
 3. **Verify the installation (optional).**
@@ -49,20 +57,31 @@ or
 jupyter lab
 ```
 
-Open any of the notebooks in the repository to explore the tutorials:
+Open any of the notebooks below to explore the tutorials. Each notebook is self-contained and includes explanatory markdown cells and runnable code cells.
 
-- `1_Reading and Writing Smiles using rdKit.ipynb`
-- `2_Property calculation, Drug-like filters, and Similarity maps.ipynb`
-- `3_Fingerprint Generation and Similarity Analysis.ipynb`
-- `4_Substructure and Similarity Search using rdKit.ipynb`
+## Tutorial Catalog
+
+| # | Notebook | Topic Overview |
+| --- | --- | --- |
+| 1 | `1_Reading and Writing Smiles using rdKit.ipynb` | Read molecules from different formats, create SMILES, and save structures. |
+| 2 | `2_Property calculation, Drug-like filters, and Similarity maps.ipynb` | Calculate physicochemical properties, apply drug-likeness filters, and render similarity maps. |
+| 3 | `3_Fingerprint Generation and Similarity Analysis.ipynb` | Generate fingerprints and compute similarity metrics for compound collections. |
+| 4 | `4_Substructure and Similarity Search using rdKit.ipynb` | Perform substructure and similarity searches across chemical libraries. |
+| 5 | `5_Conformer_Generation_and_3D_Analysis.ipynb` | Embed 3D conformers, optimize geometries, and compare conformational ensembles. |
+| 6 | `6_Reaction_Enumeration_and_Scaffolds.ipynb` | Enumerate products with reaction SMARTS and analyse Bemis–Murcko scaffolds. |
+| 7 | `7_Molecule_Standardization_and_Sanitization.ipynb` | Clean molecules, neutralize charges, and extract parent fragments. |
+| 8 | `8_QSAR_Modeling_with_Scikit_Learn.ipynb` | Build a toy QSAR classifier from Morgan fingerprints using scikit-learn. |
+| 9 | `9_Visualization_and_Drawing_Options.ipynb` | Customise 2D depictions, grid images, and similarity maps. |
+| 10 | `10_Chemical_Format_Conversion_and_Metadata.ipynb` | Convert between chemical formats and preserve metadata fields. |
 
 ## Data
 
-Supporting data files referenced by the notebooks are located in the `data/` directory. Ensure you keep the directory structure intact so that relative paths in the notebooks continue to work.
+Supporting data files referenced by the notebooks are located in the `data/` directory. Keep the directory structure intact so that relative paths inside the notebooks continue to work.
 
 ## Additional Resources
 
 - [RDKit Documentation](https://www.rdkit.org/docs/)
 - [RDKit Cookbook](https://www.rdkit.org/docs/Cookbook.html)
+- [RDKit UGM Presentations](https://www.rdkit.org/UGM/) for in-depth talks and slides.
 
-Feel free to open issues or submit pull requests if you find problems or have suggestions for improvements.
+Contributions are welcome! Open an issue or submit a pull request if you have ideas for improvements or spot any problems.
